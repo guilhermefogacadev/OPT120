@@ -8,5 +8,5 @@ Repositório de atividades de Desenvolvimento Móvel da UTFPR.
 
 | Data | Link | Atividade |
 |------|------|-----------|
-|11/03 |[SQL](https://github.com/eduardo-riki/opt120/blob/main/comandos.sql)| Comandos SQL |
+|11/03 |[SQL](https://github.com/guilhermefogacadev/OPT120/blob/main/script.sql)| Comandos SQL |
 | - | - | - |
