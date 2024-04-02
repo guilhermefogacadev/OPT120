@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Gerenciador de Atividades',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        backgroundColor: Colors.white, // Altere para a cor desejada
+        backgroundColor: Colors.white, //
       ),
       home: Home(),
     );
