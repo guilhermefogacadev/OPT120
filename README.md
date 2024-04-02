@@ -10,3 +10,5 @@ Repositório de atividades de Desenvolvimento Móvel da UTFPR.
 |------|------|-----------|
 |11/03 |[SQL](https://github.com/guilhermefogacadev/OPT120/blob/main/script.sql)| Comandos SQL |
 |25/03 | [NODE](https://github.com/guilhermefogacadev/OPT120/blob/main/aula2/app.js) | Node Express |
+|03/04 | [FLUTTER]([https://github.com/guilhermefogacadev/OPT120/blob/main/aula2/app.js](https://github.com/guilhermefogacadev/OPT120/blob/main/front/lib/main.dart)) | Flutter |
+
