@@ -48,7 +48,7 @@ app.post('/create/usuario', (req, res) => {
     if (err) {
       res.status(500).send("Erro ao inserir os Dados.");
     } else {
-      res.status(200).send("Dados inseridos com Sucesso!");
+      res.status(201).send("Dados inseridos com Sucesso!");
     }
 
     con.end();
@@ -67,7 +67,7 @@ app.post('/create/atividade', (req, res) => {
     if (err) {
       res.status(500).send("Erro ao inserir os Dados.");
     } else {
-      res.status(200).send("Dados inseridos com Sucesso!");
+      res.status(201).send("Dados inseridos com Sucesso!");
     }
 
     con.end();
