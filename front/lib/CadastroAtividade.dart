@@ -6,29 +6,50 @@ class CadastroAtividade extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Cadastro de Atividade'),
+        centerTitle: true,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            TextField(
-              decoration: InputDecoration(labelText: 'Título'),
+      body: SingleChildScrollView(
+        child: Center(
+          child: Container(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min, //
+              children: [
+                TextField(
+                  decoration: InputDecoration(
+                    labelText: 'Título',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20),
+                TextField(
+                  decoration: InputDecoration(
+                    labelText: 'Nota',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20),
+                TextField(
+                  decoration: InputDecoration(
+                    labelText: 'Data de Entrega',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Cadastrar'),
+                ),
+              ],
             ),
-            TextField(
-              decoration: InputDecoration(labelText: 'Nota'),
-              keyboardType: TextInputType.number,
-            ),
-            TextField(
-              decoration: InputDecoration(labelText: 'Data de Entrega'),
-              keyboardType: TextInputType.datetime,
-            ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {},
-              child: Text('Cadastrar'),
-            ),
-          ],
+          ),
         ),
       ),
     );
