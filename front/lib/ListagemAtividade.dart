@@ -10,8 +10,12 @@ class ListagemAtividade extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Listagem de Atividades'),
+        title: Text(
+          'Listagem de Atividades',
+          style: TextStyle(color: Color.fromARGB(156, 115, 12, 189)),
+        ),
         centerTitle: true,
+        backgroundColor: Colors.black,
       ),
       body: ListView.builder(
         itemCount: atividades.length,

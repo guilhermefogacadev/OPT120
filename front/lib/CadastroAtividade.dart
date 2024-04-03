@@ -5,8 +5,12 @@ class CadastroAtividade extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cadastro de Atividade'),
+        title: Text(
+          'Cadastro de Atividade',
+          style: TextStyle(color: Color.fromARGB(156, 115, 12, 189)),
+        ),
         centerTitle: true,
+        backgroundColor: Colors.black,
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -23,6 +27,7 @@ class CadastroAtividade extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5.0),
                     ),
                   ),
+                  style: TextStyle(color: Colors.white),
                 ),
                 SizedBox(height: 20),
                 TextField(
@@ -32,6 +37,7 @@ class CadastroAtividade extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5.0),
                     ),
                   ),
+                  style: TextStyle(color: Colors.white),
                 ),
                 SizedBox(height: 20),
                 TextField(
@@ -41,6 +47,7 @@ class CadastroAtividade extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5.0),
                     ),
                   ),
+                  style: TextStyle(color: Colors.white),
                 ),
                 SizedBox(height: 20),
                 ElevatedButton(
