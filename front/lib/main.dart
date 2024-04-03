@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Home',
       theme: ThemeData(
         primarySwatch: Colors.indigo,
+        scaffoldBackgroundColor: Colors.black,
       ),
       home: Home(),
     );
@@ -26,8 +27,12 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Gerenciador de Atividades'),
+        title: Text(
+          'Gerenciador de Atividades',
+          style: TextStyle(color: Color.fromARGB(156, 115, 12, 189)),
+        ),
         centerTitle: true,
+        backgroundColor: Colors.black,
       ),
       body: Center(
         child: Column(
