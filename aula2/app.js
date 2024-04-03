@@ -4,45 +4,37 @@ var mysql = require("mysql")
 
 
 app.use(express.json());
-app.use(
-    express.urlencoded({
-      extended: true,
-    })
-  );
 
 
   var con = mysql.createConnection({
-    host: "localhost",
+    host: 'localhost',
     port: 3306,
-    user: "root",
-    password: "root"
-});
-
-con.connect(function(err) {
-    if (err) throw err;
-    
-    con.query("use OPT120", function (err, result) {
-        if (err) throw err;
-    });
-
-    con.query("select * from Usuario", function (err, result) {
-        if (err) throw err;
-        console.log(JSON.stringify(result));
-    });
-
-    con.query("select * from Atividade", function (err, result) {
-        if (err) throw err;
-        console.log(JSON.stringify(result));
-    });
-
-    con.query("select * from Usuario_Atividade", function (err, result) {
-        if (err) throw err;
-        console.log(JSON.stringify(result));
-    });
+    user: 'root',
+    password: 'password',
+    database: "OPT120"
 });
 
 
 
+app.get('/usuario', (req, res) => {
+    con.query("SELECT * FROM usuario", function (err, result) {
+      if (err) {
+        res.status(500).send("Erro ao recuperar os dados do usuário.");
+      } else {
+        res.json(result);
+      }
+    });
+  });
+
+  app.get('/atividade', (req, res) => {
+    con.query("SELECT * FROM atividade", function (err, result) {
+      if (err) {
+        res.status(500).send("Erro ao recuperar os dados de atividade.");
+      } else {
+        res.json(result);
+      }
+    });
+  });
 
 app.listen(3000,()=>{
     console.log("Aplicação no AR");

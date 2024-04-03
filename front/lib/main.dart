@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:front/CadastroUsuario.dart';
 import 'package:front/CadastroAtividade.dart';
+
 import 'package:front/ListagemAtividade.dart';
 
 void main() {
@@ -13,8 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Gerenciador de Atividades',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        backgroundColor: Colors.white, //
+        primarySwatch: Colors.indigo,
       ),
       home: Home(),
     );
